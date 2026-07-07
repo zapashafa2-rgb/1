@@ -153,7 +153,7 @@ button:active
     color: white;
 }
 .dark .header{
-    background: rgb(158, 90, 101);
+    background: #ff91af ;
     color: whitesmoke;
 }
 .dark .card{
