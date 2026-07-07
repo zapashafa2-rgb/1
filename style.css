@@ -152,14 +152,17 @@ button:active
     background: #4A3646;
     color: white;
 }
-
+.dark .header{
+    background: rgb(158, 90, 101);
+    color: whitesmoke;
+}
 .dark .card{
     background: #5A4354;
     color: white;
 }
 
 .dark h2 {
-    color: #794156;
+    color: whitesmoke;
 }
 .dark h1,
 .dark h3,
@@ -181,7 +184,7 @@ button:active
 }
 
 .dark .theme-btn{
-    background: #FF7DA7;
+    background: #e76991;
 }
 
 .dark .theme-btn:hover{
