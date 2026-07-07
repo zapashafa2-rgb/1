@@ -86,9 +86,6 @@ hr{
     margin: 25px 0;
 }
 .card-container{
-
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
     gap:25px;
     margin-top:30px;
 
@@ -218,10 +215,13 @@ button:active
     h3{
         font-size:18px;
     }
+    .card-container{
+         flex-direction:column-reverse;
+         justify-content:center;
+        align-items:center;
+    }
     .card{
         padding:15px;
-        justify-content:center;
-        align-items:center;
     }
     ul{
         font-size:14px;
