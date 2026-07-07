@@ -220,6 +220,8 @@ button:active
     }
     .card{
         padding:15px;
+        justify-content:center;
+        align-items:center;
     }
     ul{
         font-size:14px;
