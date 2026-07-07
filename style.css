@@ -196,12 +196,12 @@ button:active
 /* ========================= */
 @media (max-width:720px){
     .container{
-        width:95%;
+        width:100%;
         padding:15px;
     }
     img{
-        width:120px;
-        height:120px;
+        width:80px;
+        height:80px;
     }
     h1{
         font-size:24px;
