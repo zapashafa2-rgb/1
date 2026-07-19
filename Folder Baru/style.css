@@ -15,48 +15,29 @@ html,body{
     margin: 0;
     overflow-x: hidden;
     box-sizing: border-box;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 /*home*/
 /*menu*/
 .dashboard{
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 9999;
+    background: linear-gradient(
+        135deg,
+        #020617,
+        #030712,
+        #0F172A
+    );
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 20px;
-    padding: 12px;
-    margin-top:10px;
-    background: rgba(18,18,30,.18);
-    backdrop-filter: blur(22px);
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 40px;
+    justify-content: right;
+    gap: 30px;
 }
 .dashboard a{
-    color:white;
+    margin:30px;
+    font-size:15px;
+    color: white;
     text-decoration:none;
-    font-size:14px;
-    padding:15px;
-    transition:.3s;
-    margin:10px;
-}
-.dashboard a.active{
-    color:#9b5cff;
-}
-.indicator{
-    position:absolute;
-    bottom:8px;
-    height:4px;
-    width:0;
-    background:#9b5cff;
-    border-radius:999px;
-    transition:
-        left .35s cubic-bezier(.22,1,.36,1),
-        width .35s cubic-bezier(.22,1,.36,1);
-    box-shadow:0 0 12px #9b5cff;
 }
 /**/
 .Home{
@@ -77,6 +58,23 @@ html,body{
     border-radius: 15px;
     box-shadow:0 8 32px rgba(0,0,0,.25);
 }
+.one button{
+    border: none;
+    border-radius: 15px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    padding: 10px;
+    margin-top: 20px;
+    cursor:pointer;
+    transition:.5s;
+}
+.one button:hover{
+    transform:translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+.one button:active{
+    transform:translateY(0) scale(1);
+    box-shadow: none;
+}
 .one h2{
 color:white;
 font-size:40px;
@@ -89,7 +87,7 @@ font-size:40px;
     width: 100%;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
 }
@@ -160,12 +158,11 @@ section{
  .dino{
     width:600px;
     padding: 20px;
-    background: rgba(20, 20, 35, 0.25);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 15px;
-    box-shadow:0 8 32px rgba(0,0,0,.25);
+    box-shadow:0 0 15px rgba(0,0,0,.3);
     cursor:pointer;
     transition:0.5s;
  }
@@ -211,7 +208,6 @@ font-size: 35px;
 .proyek{
     margin-top: 15%;
     display: flex;
-    align-items:center;
     flex-direction: column;
 }
 .proyek h2{
@@ -236,12 +232,11 @@ font-size: 35px;
     width:150px;
     height:250px;
     padding: 20px;
-    background: rgba(20, 20, 35, 0.30);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 15px;
-    box-shadow:0 8 32px rgba(0,0,0,.25);
+    box-shadow:0 0 15px rgba(0,0,0,.3);
     cursor:pointer;
     transition:0.5s;
  } 
@@ -367,12 +362,10 @@ h3
 }
 
 form{
-background: rgba(20, 20, 35, 0.30);
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(18px);
 border: 1px solid rgba(255,255,255,0.2);
-border-radius: 15px;
-box-shadow:0 8 32px rgba(0,0,0,.25);
+border-radius:12px;
 width:300px;
 display:flex;
 align-items:center;

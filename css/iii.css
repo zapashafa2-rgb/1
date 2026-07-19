@@ -1,0 +1,121 @@
+html,body{
+    background:
+        radial-gradient(circle at 20% 20%, rgba(109, 40, 217, 0.35), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(59, 130, 246, 0.25), transparent 30%),
+        radial-gradient(circle at 50% 85%, rgba(147, 51, 234, 0.20), transparent 35%),
+        linear-gradient(
+            180deg,
+            #020617 0%,
+            #050816 30%,
+            #0B1026 60%,
+            #000000 100%
+        );
+    background-attachment:fixed;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+}
+.projects{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding: 20px;
+    gap:35px;
+ }
+ .saldy,
+ .kipli,
+ .agas,
+ .uky,
+ .bowo{
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    width:100px;
+    height:250px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    cursor:pointer;
+    transition:0.5s;
+ } 
+ .saldy:hover,
+ .kipli:hover,
+ .aditya:hover,
+ .uky:hover,
+ .bowo:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+ }
+.saldy img,
+ .kipli img,
+ .agas img,
+ .bowo img,
+ .uky img{
+    background:blue;
+    width:50px;
+    height:70px;
+    border-radius:15px;
+    border:none;
+    cursor:pointer;
+    transition:0.5s;
+ }
+.saldy button,
+.kipli button,
+.agas button,
+.bowo button,
+.uky button{
+    background:
+        radial-gradient(circle at 20% 20%, rgba(109, 40, 217, 0.35), transparent 30%),
+        radial-gradient(circle at 80% 30%, rgba(59, 130, 246, 0.25), transparent 30%),
+        radial-gradient(circle at 50% 85%, rgba(147, 51, 234, 0.20), transparent 35%),
+        linear-gradient(
+            180deg,
+            #020617 0%,
+            #050816 30%,
+            #0B1026 60%,
+            #000000 100%
+        );
+    background-attachment:fixed;
+    color:white;
+    height:40px;
+    border:none;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,0,0,.3);
+    cursor:pointer;
+    transition: .3s;
+ }
+ .saldy img:hover,
+ .aditya img:hover,
+ .uky img:hover,
+ .kipli img:hover,
+ .bowo img:hover{
+    transform:translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+.saldy button:hover,
+.uky button:hover,
+.bowo button:hover,
+.aditya button:hover,
+.kipli button:hover{
+    transform:translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+.saldy button:active,
+.kipli button:active,
+.uky button:active,
+.aditya button:active,
+.bowo button:active{
+    transform:translateY(0) scale(1);
+    box-shadow: none;
+}
+h3,
+p{
+    color:whitesmoke;
+    text-align:center;
+}
