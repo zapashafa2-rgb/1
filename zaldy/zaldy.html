@@ -5,19 +5,24 @@
         <title>Zaldy Aditya Pashafa</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="zaldy.css">
+         <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     </head>
     <body>
     <div class="dashboard">
-        <p><a href="../page/index.html">Home</a></p>
-        <p><a href="../page/tentang.html">Team</a></p>
-        <p><a href="../page/project.html">Projects</a></p>
-        <p><a href="../page/contact.html">Contact</a></p>
+    <a href="#profil">Profil</a>
+    <a href="#ringkasan">Ringkasan</a>
+    <a href="#pendidikan">Pendidikan</a>
+    <a href="#pengalaman">Pengalaman</a>
+    <span class="indicator"></span>
+    <a href="../index.html">
+        <button><i class="fa-solid fa-arrow-right"></i></button>
+    </a>
     </div>
     <div class="cv">
-         <section class="profil">
-            <div class="nama">
+         <section id="profil" class="profil">
+            <div class="nama" data-aos="fade-right">
                 <h2>Zaldy Aditya Pashafa</h2>
-                <p>Saya merupakan mahasiswa Informatika Semester 2 yang memiliki minat dalam pengembangan website modern. Saat ini saya terus mengembangkan kemampuan di bidang HTML, CSS, JavaScript, dan C++ melalui berbagai proyek pribadi.</p>
+                <h3>Front-End Developer</h3>
                 <div class="link">
                     <a href="https://wa.me/6285210346138" target="_blank" rel="noopener noreferrer">
                 <button><i class="fa-brands fa-whatsapp">Whatsapp</i></button>
@@ -30,17 +35,18 @@
                 </a>
                 </div>
             </div>
-            <div class="foto">
+            <div class="foto" data-aos="fade-left">
                     <img src="../foto/zaldy.png" alt="Zaldy Aditya Pashafa">
             </div>
         </section>
-        <h4>RINGKASAN</h4>
-        <section class="tentang">
-            <div class="tentang-saya">
+        <section id="tentang" class="about">
+            <h4>RINGKASAN</h4>
+        <div class="tentang">
+            <div class="tentang-saya" data-aos="zoom-in">
                 <h4>About Me</h4>
                 <p>Saya adalah mahasiswa S1 Informatika Semester 2 yang memiliki ketertarikan dalam dunia teknologi dan pengembangan web. Saya senang mempelajari hal-hal baru, terus mengembangkan kemampuan, serta menikmati proses menciptakan solusi yang bermanfaat melalui teknologi. Bagi saya, setiap proyek merupakan kesempatan untuk belajar, berkembang, dan terus meningkatkan kualitas diri.</p>
             </div>
-                <div class="informasi">
+                <div class="informasi" data-aos="zoom-in">
                     <h4>DETAIL</h4>
                     <p><span><b>Birth</b></span></p>
                     <p>16 Oktober 2007</p>
@@ -49,7 +55,7 @@
                     <p><span><b>E-mail</b></span></p>
                     <p>zapashafa@gmail.com</p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="zoom-in">
                     <h4>SKILLS</h4>
                     <p>Microsoft Office</p>
                     <p>HTML</p>
@@ -57,10 +63,11 @@
                     <p>JavaScript</p>
                     <p>Instalasi Software</p>
                 </div>
+        </div>
         </section>
         <h4>PENDIDIKAN</h4>
-        <section class="pendidikan">
-            <div class="kuliah">
+        <section id="pendidikan" class="pendidikan">
+            <div class="kuliah" data-aos="zoom-in">
                 <div class="logo">
                      <i class="fa-solid fa-school"></i>
                 </div>
@@ -70,20 +77,10 @@
                     <p>2025-sekarang</p>
                 </div>
             </div>
-            <div class="kuliah">
-                <div class="logo">
-                    <i class="fa-solid fa-school"></i>
-                </div>
-                <div class="lulusan">
-                    <h5>Teknik Komputer Jaringan</h5>
-                    <p>SMK Dinamika Insan Mandiri</p>
-                    <p>2022-2025</p>
-                </div>
-            </div>
         </section>
         <h4>PENGALAMAN</h4>
-        <section class="pengalaman">
-            <div class="kerja">
+        <section id="pengalaman" class="pengalaman">
+            <div class="kerja" data-aos="zoom-in">
             <div class="logo">
                 <i class="fa-solid fa-school"></i>
             </div>
@@ -101,5 +98,8 @@
             </div>
         </section>
     </div>
+<script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="zaldy.js"></script>
     </body>
 </html>
