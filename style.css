@@ -440,8 +440,10 @@ button:active{
         
     }
     .one{
-        width:calc(100% - 30px);
+        width:auto;
          margin:0 35px;
+         padding: 20px;
+         box-sizing: border-box;
     }
     .one h2{
         font-size:30px;
