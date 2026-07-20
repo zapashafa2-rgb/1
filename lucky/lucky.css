@@ -343,11 +343,16 @@ i,li{
         flex-direction:column;
         gap:20px;
     }
-
-    .kuliah,
-    .kerja{
+    .pengalaman{
+        flex-direction: column;
+         box-sizing:border-box;
+    }
+    .kuliah{
         width:100%;
         box-sizing:border-box;
+    }
+    .kerja{
+        width:auto;
     }
 
     .foto img{
