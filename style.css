@@ -64,7 +64,7 @@ html,body{
     min-height: 80vh;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
 }
 .one{
@@ -435,7 +435,6 @@ button:active{
     }
     /* Home */
     .Home{
-        flex-direction:column-reverse;
         justify-content:center;
         text-align:center;
         padding:100px 20px 40px;
