@@ -279,4 +279,117 @@ i{
     color:whitesmoke;
     text-shadow: 0 0 15px rgba(255,255,255,.35);
 }
+/***responsive mobile***/
+/* ================= TABLET ================= */
+@media (max-width: 768px){
+
+    html,
+    body{
+        width:100%;
+        overflow-x:hidden;
+    }
+
+    .dashboard{
+        width:90%;
+        gap:15px;
+        padding:10px;
+        flex-wrap:wrap;
+    }
+
+    .dashboard a{
+        font-size:13px;
+    }
+
+    .cv{
+        width:100%;
+        padding:20px;
+        box-sizing:border-box;
+    }
+
+    .profil{
+        flex-direction:column-reverse;
+        gap:30px;
+        text-align:center;
+    }
+
+    .nama{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .tentang{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .tentang-saya,
+    .informasi,
+    .skill{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .pendidikan{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .kuliah,
+    .kerja{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .foto img{
+        width:180px;
+    }
+}
+
+/* ================= HP ================= */
+@media (max-width:480px){
+    .dashboard{
+        width:95%;
+        gap:8px;
+        padding:8px;
+    }
+    .dashboard a{
+        font-size:11px;
+    }
+    h2{
+        font-size:28px;
+    }
+    h3{
+        font-size:20px;
+    }
+    h4{
+        font-size:18px;
+    }
+    p,
+    li{
+        font-size:14px;
+        line-height:1.6;
+    }
+    .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+    }
+    .link button{
+        width:100%;
+    }
+    .foto img{
+        width:150px;
+    }
+    .foto::before{
+        width:220px;
+        height:220px;
+    }
+    .kuliah,
+    .kerja{
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+    }
+}
     
