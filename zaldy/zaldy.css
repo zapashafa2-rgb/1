@@ -288,7 +288,7 @@ li{
     html,
     body{
         width:100%;
-        overflow-x:hidden;
+        overflow-x:auto;
     }
 
     .dashboard{

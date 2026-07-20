@@ -424,7 +424,9 @@ button:active{
         gap:5px;
         overflow-x:auto;
         white-space:nowrap;
-        justify-content:flex-start;
+        display: flex;
+        align-items: center;
+        justify-content:center;
     }
     .dashboard a{
         font-size:12px;
