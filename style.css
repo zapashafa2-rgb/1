@@ -21,19 +21,19 @@ html,body{
 /*home*/
 /*menu*/
 .dashboard{
+    width:100%;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
     z-index: 9999;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px;
-    padding: 12px;
-    margin-top:10px;
-    background: rgba(18,18,30,.18);
+    padding: 10px;
+    background: rgba(191, 191, 247, 0.18);
     backdrop-filter: blur(22px);
     border: 1px solid rgba(255,255,255,.08);
-    border-radius: 40px;
 }
 .dashboard a{
     color:white;
@@ -68,18 +68,15 @@ html,body{
     gap: 20px;
 }
 .one{
-    width:450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
-    background: rgba(20, 20, 35, 0.25);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 15px;
-    box-shadow:0 8 32px rgba(0,0,0,.25);
 }
 .one h2{
-color:white;
-font-size:40px;
+color:rgb(173, 48, 231);
+font-size:60px;
 }
 .one p{
     color:white;
@@ -420,7 +417,7 @@ button:active{
 @media (max-width:768px){
     /* Navbar */
     .dashboard{
-        width:90%;
+        width:100%;
         gap:5px;
         overflow-x:auto;
         white-space:nowrap;
