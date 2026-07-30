@@ -150,7 +150,7 @@ color:whitesmoke;
 }
 .proyek-card{
     min-width:550px;
-    height:auto;
+    height:420px;
     scroll-snap-align:start;
     border-radius:20px;
     display:flex;
@@ -343,7 +343,6 @@ button:active{
         width:auto;
          margin:0 35px;
          padding: 20px;
-         box-sizing: border-box;
     }
     .one h2{
         font-size:30px;
