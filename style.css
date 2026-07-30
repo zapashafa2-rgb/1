@@ -93,20 +93,18 @@ font-size:60px;
 .photo {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap:70px;   
-    margin-bottom: 5%;
+    gap:30px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    padding:40px;
+    scrollbar-width:none;
 }
-.luky,
-.aldy,
-.aa-rafli,
-.selo,
-.rachman{
+.card{
     background: rgba(20, 20, 35, 0.25);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 15px;
     box-shadow:0 8 32px rgba(0,0,0,.25);
     display: flex;
     flex-direction: column;
@@ -117,19 +115,11 @@ font-size:60px;
     border-radius: 20px;
     padding: 20px;
 }
-.luky p,
-.aldy p,
-.aa-rafli p,
-.selo p,
-.rachman p{
+.card p{
 color:whitesmoke;
 
 }
-.aldy img,
-.selo img,
-.rachman img,
-.aa-rafli img,
-.luky img{
+.card img{
     background:blue;
     width: 100px;
     height: 140px;
@@ -137,51 +127,61 @@ color:whitesmoke;
     margin-bottom: 20px;
 }
 /*home*/
-/**tentang kami**/
-.tentang-kami{
+/**proyek*/
+.projects{
     margin-top: 15%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-section{
+.proyek{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    scroll-snap-type:x mandatory;
+    padding:40px;
+    scrollbar-width:none;
+    margin:30px;
+}
+.proyek::-webkit-scrollbar{
+    display:none;
+}
+.proyek-card{
+    min-width:550px;
+    height:auto;
+    scroll-snap-align:start;
+    border-radius:20px;
     display:flex;
     align-items:center;
-    justify-content:space-around;
-    padding: 20px;
- }
- .zaldy,
- .rafli,
- .bagas,
- .lucky,
- .dino{
-    width:600px;
+    justify-content: center;
+    flex-direction: column;
     padding: 20px;
     background: rgba(20, 20, 35, 0.25);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.2);
-    border-radius: 15px;
     box-shadow:0 8 32px rgba(0,0,0,.25);
     cursor:pointer;
     transition:0.5s;
  }
- 
-.zaldy:hover,
-.rafli:hover,
-.bagas:hover,
-.lucky:hover,
-.dino:hover{
-    transform: translateY(-10px) scale(1.1);
+.proyek-card:hover{
+    transform: translateY(-6px) scale(1.03);
     box-shadow: 0 15px 35px rgba(0,0,0,.2);
 }
- p{
+.profil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+p{
     color:white;
  }
  img {
     background:blue;
-    width:140px;
-    height:170px;
+    width:100px;
+    height:120px;
     border-radius:15px;
     border:none;
     cursor:pointer;
@@ -191,9 +191,13 @@ section{
     transform:translateY(-10px) scale(1.1);
     box-shadow: 0 15px 35px rgba(0,0,0,.2);
 }
-.tentang-kami h2{
+.proyek h2{
 color:white;
 font-size: 35px;
+}
+.proyek-card h2{
+    font-size: 25px;
+    color: #9b5cff;
 }
 /*kontak*/
 .kontak{
@@ -203,127 +207,24 @@ font-size: 35px;
 .kontak a{
    color:white;
 }
-/**tentangkami**/
-/**project**/
-.proyek{
-    margin-top: 15%;
-    display: flex;
-    align-items:center;
-    flex-direction: column;
-}
-.proyek h2{
+/**tombol**/
+.profil button{
+    background: #a71dd1;
     color: whitesmoke;
-    font-size: 35px;
-}
-.projects{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding: 20px;
-    gap:35px;
- }
- .saldy,
- .kipli,
- .aditya,
- .uky,
- .bowo{
-    display:flex;
-    align-items:center;
-    flex-direction:column;
-    width:150px;
-    height:300px;
-    padding: 20px;
-    background: rgba(20, 20, 35, 0.30);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.2);
+    height: 40px;
+    border: none;
     border-radius: 15px;
-    box-shadow:0 8 32px rgba(0,0,0,.25);
-    cursor:pointer;
-    transition:0.5s;
- } 
- .saldy:hover,
- .kipli:hover,
- .aditya:hover,
- .uky:hover,
- .bowo:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,0,0,.2);
- }
-.saldy img,
- .kipli img,
- .aditya img,
- .bowo img,
- .uky img{
-    background:blue;
-    width:100px;
-    height:130px;
-    border-radius:15px;
-    border:none;
-    cursor:pointer;
-    transition:0.5s;
- }
-.saldy button,
-.kipli button,
-.aditya button,
-.bowo button,
-.uky button{
-    background:
-        radial-gradient(circle at 20% 20%, rgba(109, 40, 217, 0.35), transparent 30%),
-        radial-gradient(circle at 80% 30%, rgba(59, 130, 246, 0.25), transparent 30%),
-        radial-gradient(circle at 50% 85%, rgba(147, 51, 234, 0.20), transparent 35%),
-        linear-gradient(
-            180deg,
-            #020617 0%,
-            #050816 30%,
-            #0B1026 60%,
-            #000000 100%
-        );
-    background-attachment:fixed;
-    color:white;
-    height:40px;
-    border:none;
-    border-radius:12px;
-    box-shadow:0 0 15px rgba(0,0,0,.3);
-    cursor:pointer;
-    transition: .3s;
- }
- .saldy img:hover,
- .aditya img:hover,
- .uky img:hover,
- .kipli img:hover,
- .bowo img:hover{
-    transform:translateY(-8px) scale(1.05);
-    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.5s;
 }
-.saldy button:hover,
-.uky button:hover,
-.bowo button:hover,
-.aditya button:hover,
-.kipli button:hover{
+.profil button:hover{
     transform:translateY(-8px);
     box-shadow: 0 15px 35px rgba(0,0,0,.2);
 }
-.saldy button:active,
-.kipli button:active,
-.uky button:active,
-.aditya button:active,
-.bowo button:active{
+.profil button:active{
     transform:translateY(0) scale(1);
     box-shadow: none;
-}
-.saldy p,
-.kipli p,
-.aditya p,
-.bowo p,
-.uky p{
-    text-align:center;
-    color: whitesmoke;
-}
-h3
-{
-    color:whitesmoke;
-    text-align:center;
 }
 /***contact***/
  .contact-us{
@@ -434,6 +335,7 @@ button:active{
     .Home{
         justify-content:center;
         text-align:center;
+        justify-content: center;
         padding:100px 20px 40px;
         
     }
@@ -456,47 +358,42 @@ button:active{
     padding: 0 20px;
     box-sizing: border-box;
     }
-    .luky,
-    .aldy,
-    .aa-rafli,
-    .selo,
-    .rachman{
-        width:calc(100% - 40px);
+    .card{
+        width:calc(50% - 40px);
         margin:10px auto;
         padding: 10px;
         height:auto;
         box-sizing: border-box;
     }
-    /* Tentang Kami */
-    section{
-        flex-direction:column;
-        gap:20px;
-    }
-    .zaldy,
-    .rafli,
-    .bagas,
-    .lucky,
-    .dino{
+    /* proyek */
+    /* Projects */
+.proyek{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+.proyek::-webkit-scrollbar{
+    display: none;
+}
+.proyek-card{
+    min-width: 90%;
+    flex: 0 0 auto;
+    margin: 0;
+    scroll-snap-align: start;
+}
+    .profil{
         width:calc(100% - 40px);
-        margin:15px auto;
+        margin:20px auto;
+        box-sizing: border-box;
     }
     img{
         width:120px;
         height:150px;
-    }
-    /* Project */
-    .projects{
-        flex-wrap:wrap;
-        gap:20px;
-    }
-    .saldy,
-    .kipli,
-    .aditya,
-    .uky,
-    .bowo{
-        width:calc(100% - 40px);
-        margin:15px auto;
-        height:auto;
     }
     /* Contact */
     .contacts{
