@@ -194,10 +194,32 @@
         </a>
         </div>
     </div>
-    <form data-aos="fade-left">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
+    <form id="form" data-aos="fade-left">
+            <input type="text" 
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+            minlength="3"
+            maxlength="50"
+            pattern="[A-Za-z\s]+"
+            title="Nama hanya boleh berisi huruf"
+            />
+            <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Your Email"
+            />
+           <textarea
+            id="message"
+            name="message"
+            required
+            minlength="10"
+            maxlength="500"
+            placeholder="Write your message..."
+            ></textarea>
             <button type="submit">Send Message</button>
     </form>
     </section>

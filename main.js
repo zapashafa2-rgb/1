@@ -63,3 +63,44 @@ window.addEventListener("scroll", () => {
         }
     });
 });
+//form
+const form = document.getElementById("form");
+
+form.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    const regex = /^[A-Za-z ]+$/;
+
+    if(!regex.test(name)){
+        alert("Nama hanya boleh huruf");
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if(!emailRegex.test(email)){
+        alert("Email tidak valid");
+        return;
+    }
+
+    if(message.length < 10){
+        alert("Pesan minimal 10 karakter");
+        return;
+    }
+
+    const formData = new FormData(form);
+
+    await fetch("https://script.google.com/macros/s/AKfycbzxUfFSt_0t3HBJwl9WzadXw3c7uhbOsgPH10PnPvT-RsmAcNdnTyQMsGyusly5t76YRQ/exec", {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+    });
+
+    alert("Pesan berhasil dikirim!");
+    form.reset();
+});

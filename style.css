@@ -150,7 +150,7 @@ color:whitesmoke;
 }
 .proyek-card{
     min-width:550px;
-    height:420px;
+    height:430px;
     scroll-snap-align:start;
     border-radius:20px;
     display:flex;
@@ -212,9 +212,10 @@ font-size: 35px;
     background: #a71dd1;
     color: whitesmoke;
     height: 40px;
+    padding:10px;
     border: none;
     border-radius: 15px;
-    margin-top: 10px;
+    margin: 15px;
     cursor: pointer;
     transition: 0.5s;
 }
