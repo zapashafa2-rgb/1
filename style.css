@@ -11,9 +11,9 @@ html,body{
             #000000 100%
         );
     background-attachment:fixed;
+    overflow-x: hidden;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
     box-sizing: border-box;
     width: 100%;
     min-height: 100%;
@@ -141,16 +141,19 @@ color:whitesmoke;
     overflow-x:auto;
     overflow-y:hidden;
     scroll-snap-type:x mandatory;
-    padding:40px;
     scrollbar-width:none;
+    cursor: grab;
     margin:30px;
 }
 .proyek::-webkit-scrollbar{
     display:none;
 }
+.proyek:active{
+    cursor: grabbing;
+}
 .proyek-card{
-    min-width:550px;
-    height:430px;
+    min-width:35%;
+    min-height:500px;
     scroll-snap-align:start;
     border-radius:20px;
     display:flex;
@@ -163,11 +166,10 @@ color:whitesmoke;
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow:0 8 32px rgba(0,0,0,.25);
-    cursor:pointer;
-    transition:0.5s;
+    transition: 0.3s;
  }
-.proyek-card:hover{
-    transform: translateY(-6px) scale(1.03);
+ .proyek-card:hover{
+    transform:translateY(-8px) scale(1.03);
     box-shadow: 0 15px 35px rgba(0,0,0,.2);
 }
 .profil{
@@ -180,8 +182,8 @@ p{
  }
  img {
     background:blue;
-    width:100px;
-    height:120px;
+    width: 150px;
+    height:200px;
     border-radius:15px;
     border:none;
     cursor:pointer;
@@ -342,7 +344,7 @@ button:active{
     }
     .one{
         width:auto;
-         margin:0 35px;
+         margin:0 20px;
          padding: 20px;
     }
     .one h2{
@@ -355,14 +357,14 @@ button:active{
     justify-content: center;
     gap: 20px;
     width: 100%;
-    padding: 0 20px;
+    margin: 10px 10px;
     box-sizing: border-box;
     }
     .card{
         width:calc(50% - 40px);
         margin:10px auto;
         padding: 10px;
-        height:auto;
+        height:300px;
         box-sizing: border-box;
     }
     /* proyek */
@@ -381,9 +383,12 @@ button:active{
     display: none;
 }
 .proyek-card{
-    min-width: 90%;
-    height:auto;
-    flex: 0 0 auto;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 450px;
     margin: 0;
     scroll-snap-align: start;
 }
